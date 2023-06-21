@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interview Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>
+  <link rel="stylesheet" href="interview-page.css">
+  <script src="https://cdn.jsdelivr.net/npm/microsoft-cognitiveservices-speech-sdk/distrib/browser/microsoft.cognitiveservices.speech.sdk.bundle.js"></script>
+  <script src="https://aka.ms/csspeech/jsbrowserpackageraw"></script>
+  <script src="interview-page.js"></script>
+  <script src="https://cdn.webrtc-experiment.com/RecordRTC.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <div id="speechDiv"></div>
+  <div class="box">
+    <textarea id="phraseDiv1" class="textbox-question" rows="8" cols="50" spellcheck="false"></textarea>
+    <textarea id="phraseDiv" class="textbox-answer" rows="6" cols="50" spellcheck="false"></textarea>
+  </div>
+  <div class="button-box">
+    <button id="mute-button" onclick="startRecording()" class="bi bi-mic-mute"></button>
+    <button id="pause-button" class="bi bi-pause-fill"></button>
+  </div>
+  <script src="WhisperSTT.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
