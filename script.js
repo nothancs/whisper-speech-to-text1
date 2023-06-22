@@ -93,7 +93,7 @@ class WhisperSTT {
 }
 
 // Usage example
-const apiKey = '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'; // Replace with your actual API key
+const apiKey = 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; // Replace with your actual API key
 const whisperSTT = new WhisperSTT(apiKey);
 
 const startButton = document.getElementById('mute-button');
